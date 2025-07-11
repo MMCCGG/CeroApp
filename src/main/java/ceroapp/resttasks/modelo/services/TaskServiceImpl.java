@@ -1,12 +1,12 @@
-package resttasks.modelo.services;
+package ceroapp.resttasks.modelo.services;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import resttasks.modelo.entities.Task;
-import resttasks.repository.TaskRepository;
+import ceroapp.resttasks.modelo.entities.Task;
+import ceroapp.resttasks.repository.TaskRepository;
 @Service
 public class TaskServiceImpl implements TaskService {
 	@Autowired private TaskRepository trepo;

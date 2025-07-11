@@ -1,8 +1,8 @@
-package resttasks.modelo.services;
+package ceroapp.resttasks.modelo.services;
 
 import java.util.List;
 
-import resttasks.modelo.entities.Task;
+import ceroapp.resttasks.modelo.entities.Task;
 
 public interface TaskService {
 	Task alta(Task task);

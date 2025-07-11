@@ -1,8 +1,8 @@
-package resttasks.repository;
+package ceroapp.resttasks.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import resttasks.modelo.entities.Task;
+import ceroapp.resttasks.modelo.entities.Task;
 
 public interface TaskRepository extends JpaRepository<Task, Integer> {
 
