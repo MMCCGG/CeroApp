@@ -1,1 +1,17 @@
-<p>task-list works!</p>
+<h2>Lista de Tareas</h2>
+
+@if (loading()) {
+    <div>Cargando...</div>
+} @else if (error()) {
+    <div>Error al cargar tareas</div>
+} @else {
+    <ul>
+        @for (task of tasks(); track task.id) {
+            <li>
+                <strong [style.color]="task.completed ? 'green' : 'red'">
+                    {{ task.title }}
+                </strong>
+            </li>
+        }
+    </ul>
+}
